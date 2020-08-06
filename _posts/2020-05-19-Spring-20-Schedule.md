@@ -8,9 +8,9 @@ categories: [Spring20, EventSchedule]
 
 # Events
 
-**REGISTER** for the events [http://bit.ly/UWBcomp](http://bit.ly/UWBcomp). Other questions, contact us at [uwbacm@uw.edu](uwbacm@uw.edu)
+**REGISTER** for the events [http://bit.ly/UWBcomp](http://bit.ly/UWBcomp). Other questions, contact us at [{{site.email}}](mailto:{{site.email}})
 
-![Competitive Programming '20 Spring Schedule](/competitive-programming/img/spr20events.png)
+![Competitive Programming '20 Spring Schedule]({{ site.baseurl }}{% link img/spr20events.png%})
 
 ## Guest Speakers
 - [<span style="color: blue">Sergio Ligregni</span>](https://ch.linkedin.com/in/ligregni): Software Engineer @Google.
