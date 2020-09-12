@@ -1,47 +1,63 @@
 ---
 layout: page
 title: UWBCode 2020
-background: '/img/uwbcode2020/uwbcode20bg.png'
+background: '/img/uwbcode2020/home-background.jpg'
 ---
+
 <style>
     .ext-link {
         text-decoration: none;
         color: blue;
     }
-
     .event-schedule {
         width: 100%;
         height: auto;
         margin: 10px auto;
     }
-    .custom-body {
-        font-family: Arial, Helvetica, sans-serif;
-    }
-    .registration-list li::before {
-        content: "Step ";
-    }
+    .custom-body { font-family: Arial, Helvetica, sans-serif; }
+
+    .registration-list li::before { content: "Step "; }
+
     .custom-body details {
         display: list-item;
         margin: 12px auto;
     }
-    .tnc ol {
-        counter-reset: item;
-    }
-    .tnc li {
-        display: block;
-    }
+    .tnc ol { counter-reset: item; }
+    .tnc li { display: block; }
     .tnc li:before {
         content: counters(item, ".") " ";
         counter-increment: item
     }
+    .zoom {
+        transition: transform .2s;
+        margin: 0 auto;
+    }
+    .zoom:hover { transform: scale(1.1); }
 </style>
 
 <div class="custom-body">
+    <div class="d-flex center">
+        <a class="align-self-center col-md-2 d-inline-block zoom" target="blank" href="https://www.uwb.edu">
+            <img class="img-fluid" src="/img/uwbcode2020/uwb_logo.png" alt="UWB logo">     
+        </a>
+        <a class="align-self-center col-md-2 d-inline-block zoom" target="blank" href="https://uwbacm.com">
+            <img class="img-fluid" src="/img/uwbcode2020/acm-large-logo.jpg" alt="UWB ACM logo">
+        </a>
+        <a class="align-self-center col-md-5 col-mt-3 d-inline-block zoom" target="blank" href="https://alleninstitute.org/what-we-do/brain-science/">
+            <img class="img-fluid" src="/img/uwbcode2020/AI_Brain_Science_Logo.png"
+                alt="Allen Institute for Brain Science logo">
+        </a>
+        <a class="align-self-center col-md-2 d-inline-block zoom" target="blank" href="https://www.instagram.com/girlswhocode__uwb/?igshid=lmenj5wiuyo">
+            <img class="img-fluid rounded" src="/img/uwbcode2020/gwc.jpg" alt="Girls Who Code logo">
+        </a>
+    </div>
+    <hr>
     <p style="text-align: justify">
         Welcome to <b>UWBCode 2020</b>, a competitive programming event hosted by the <a class="ext-link"
             href="https://uwbacm.com/"
             title="University of Washington Bothell Chapter of the Association for Computing Machinery">UWB ACM </a> and
-        <a class="ext-link" href="https://www.instagram.com/girlswhocode__uwb/?igshid=lmenj5wiuyo">Girls Who Code</a> with a great support from the <a class="ext-link" href="https://alleninstitute.org/">Allen
+        <a class="ext-link" href="https://www.instagram.com/girlswhocode__uwb/?igshid=lmenj5wiuyo">Girls Who Code.</a>
+        Our special thanks to the <a class="ext-link" href="https://alleninstitute.org/what-we-do/brain-science/">Allen
             Institute for Brain Science</a>.<br><br>
         <b>The weekly competitions will be held from October 9 - October 23, with the final contest on November 20.</b>
         These weekly competitions will last 1-3 days. During this window, individuals can submit your solution at any
@@ -61,7 +77,7 @@ background: '/img/uwbcode2020/uwbcode20bg.png'
             </tr>
             <tr>
                 <td>Oct. 09&emsp;10:00AM</td>
-                <td><a class="ext-link" href="https://www.hackerrank.com/uwbcode2020-qualification">Qualification
+                <td><a class="ext-link" target="blank" href="https://www.hackerrank.com/uwbcode2020-qualification">Qualification
                         Round</a></td>
                 <td>72 hours</td>
                 <td>Oct. 12&emsp;10:00AM</td>
@@ -86,10 +102,9 @@ background: '/img/uwbcode2020/uwbcode20bg.png'
             </tr>
             <tr>
                 <td style="font-size: 16px;"><b>**All times in PDT.<a class="ext-link"
-                            href="https://www.timeanddate.com/worldclock/converter.html?iso=20200909T010000&p1=5497">
+                            href="https://www.timeanddate.com/worldclock/converter.html?iso=20201009T170000&p1=5497">
                             Other time zones?</a></b></td>
             </tr>
-
         </table>
     </details>
 
@@ -149,8 +164,9 @@ background: '/img/uwbcode2020/uwbcode20bg.png'
                         <ol>
                             <li>Group 1:
                                 <div>Contestants who are qualified for Round 1. To be qualified for Round 1, contestants
-                                    <b>must</b> solve at least ONE challenge in the qualification round. Contestants, who are NOT qualified for  
-                                    Round 1, still can  compete in Group 2. 
+                                    <b>must</b> solve at least ONE challenge in the qualification round. Contestants,
+                                    who are NOT qualified for
+                                    Round 1, still can compete in Group 2.
                                 </div>
                             </li>
                             <li>Group 2:
@@ -198,7 +214,7 @@ background: '/img/uwbcode2020/uwbcode20bg.png'
                     <li>Retain information of other contestants.</li>
                     <li>Share inappropriate information/media/thoughts via Zoom or HackerRank. If violated, you will
                         deal with consequences from University of Washington Bothell and HackerRank/Zoom.
-                    <li>Commits a criminal act that impacts the contest and contestants.</li>
+                    <li>Commit a criminal act that impacts the contest and contestants.</li>
                 </ol>
                 <br>
                 <div style="font-weight: bold;">If you found any issue in our system or the contest itself, contact us
@@ -212,21 +228,23 @@ background: '/img/uwbcode2020/uwbcode20bg.png'
                     <li>UWB ACM will NOT use information you provided in the registration form for purposes other than
                         UWBCode 2020.</li>
                     <li>UWB ACM will NOT reveal your information without your permission.</li>
-                    <li>You have all rights with the code you submitted. We will not utilize it without your allowance.
+                    <li>You have all rights to the code you submitted. We will not utilize it without your allowance.
                     </li>
                     <li>Your username on HackerRank will be used for ranking announcements. Please contact us or leave a
                         note in the registration form if you wish not to public it.</li>
                 </ol>
             </li>
             <li><b>. Prizes</b>
-                <div>The first 10 contestants in the ranking system will receive special gifts from Allen Institute for
-                    Brain Science. We have 1 winner, 1 first runner-up, 1 second runner-up, 7 consolations.</div>
+                <div>The final top 10 contestants in the ranking system will receive special gifts from Allen Institute
+                    for Brain Science. We recognize: <br>
+                    &ensp;&star; 1 winner<br>
+                    &ensp;&star; 1 first runner-up<br>
+                    &ensp;&star; 1 second runner-up<br>
+                    &ensp;&star; 7 consolations<br>
+                </div>
             </li>
         </ol>
-
-
     </details>
-
     <details class="tnc">
         <summary id="terms_conditions" style="background-color: rgb(228, 224, 224); font-weight: bold;">FAQs</summary>
         <ol style="padding-left: 0px">
@@ -235,10 +253,12 @@ background: '/img/uwbcode2020/uwbcode20bg.png'
                     you meet Eligibility requirements.</div>
             </li>
             <li><b>. Can I submit my code after the contest ends?</b>
-                <div>Yes. You can submit your code after the contest ends. However, points you get from those submissions do not count towards the final rank.</div>
+                <div>Yes. You can submit your code after the contest ends. However, points you get from those
+                    submissions do not count towards the final rank.</div>
             </li>
-            <li><b>. How can I find my ranking?</b>
-                <div>You can view your round rankings live in the contest's Leaderboard. The overall rankings will be updated on our website within 2 days after the end of each round.</div>
+            <li><b>. How do I find my ranking?</b>
+                <div>You can view your round rankings live in the contest's Leaderboard. The overall rankings will be
+                    updated on our website within 2 days after the end of each round.</div>
             </li>
         </ol>
 
