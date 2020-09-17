@@ -3,7 +3,7 @@ layout: post
 title: "Final Contest Registration is OPEN!!"
 date: 2020-05-19 7:50:13
 background: '/img/post-bg.jpg'
-published: false
+published: true
 categories: [Spring20, Announcement]
 ---
 
