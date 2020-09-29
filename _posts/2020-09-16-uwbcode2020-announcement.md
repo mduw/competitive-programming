@@ -12,6 +12,50 @@ exturl_uwbacm: https://uwbacm.com
 exturl_gwc: https://www.instagram.com/girlswhocode__uwb/?igshid=lmenj5wiuyo
 exturl_regisform: http://bit.ly/join-uwbcode20
 ---
+<!-- Display the countdown timer in an element -->
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Oct 9, 2020 10:00:00 PDT").getTime();
+
+// Update the count down every 1 second
+var interval = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="clk"
+  document.getElementById("clk").innerHTML = days + " days : " + hours + " hours : "
+  + minutes + " minutes : " + seconds + " seconds ";
+
+  // If the count down is finished, write some text 
+  if (distance < 0) {
+    clearInterval(interval);
+    document.getElementById("clk").innerHTML = "CONTEST STARTED!";
+  }
+}, 1000);
+</script>
+<style>
+    .clk-bg {
+    background-color: dodgerblue;
+    color: white; 
+    font-size: 22px; 
+    text-align: center;
+    padding: 4px 4px;
+}
+</style>
+<div class="container mb-4 col-md-8 clk-bg">
+        <div class="d-inline-block">Qualification Round starts in</div> <br>
+        <b><div class="d-inline-block" id="clk"></div></b>
+</div>
 <div class="d-flex center">
         <a class="align-self-center col-md-2 d-inline-block zoom" target="blank" href="{{page.exturl_uwb}}">
             <img class="img-fluid" src="/img/uwbcode2020/uwb_logo.png" alt="UWB logo">     

@@ -33,10 +33,53 @@ background: '/img/uwbcode2020/home-background.jpg'
         margin: 0 auto;
     }
     .zoom:hover { transform: scale(1.1); }
+    .clk-bg {
+        background-color: dodgerblue;
+        color: white; 
+        font-size: 22px; 
+        text-align: center;
+        padding: 4px 4px;
+    }
 </style>
+<!-- Display the countdown timer in an element -->
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Oct 9, 2020 10:00:00 PDT").getTime();
+
+// Update the count down every 1 second
+var interval = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="clk"
+  document.getElementById("clk").innerHTML = days + " days : " + hours + " hours : "
+  + minutes + " minutes : " + seconds + " seconds ";
+
+  // If the count down is finished, write some text 
+  if (distance < 0) {
+    clearInterval(interval);
+    document.getElementById("clk").innerHTML = "CONTEST STARTED!";
+  }
+}, 1000);
+</script>
 
 <div class="custom-body">
-    <div class="d-flex center">
+    <div class="container mb-4 col-md-8 clk-bg">
+        <div class="d-inline-block">Qualification Round starts in</div> <br>
+        <b><div class="d-inline-block" id="clk"></div></b>
+    </div>
+    <div class="d-flex center mt-4">
         <a class="align-self-center col-md-2 d-inline-block zoom" target="blank" href="https://www.uwb.edu">
             <img class="img-fluid" src="/img/uwbcode2020/uwb_logo.png" alt="UWB logo">     
         </a>
@@ -61,8 +104,7 @@ background: '/img/uwbcode2020/home-background.jpg'
             Institute for Brain Science</a>.<br><br>
             UWBCode is open to all contestants. <b>The weekly competitions will be held from October 9 - October 23, with the window to participate ranging from 24 to 72 hours for each round. The final contest will be held on November 20 for 4 hours.</b> For more detailed information, reference <a class="ext-link"
             href="#contest_schedule">schedule</a> below. <i>During given windows, individuals can submit their solutions at any time. You may not need the entire time to solve all challenges.</i><br>
-        Scoring is specified under Terms and Conditions. The final top 10 contestants receive special gifts from the Allen Institute for Brain
-        Science.
+        Scoring and Prizes are specified under Terms and Conditions. <a class="ext-link" href="#registration"><b>Register</a> now to compete for prizes and a meeting with Shoaib Mufti, Senior Director of Data and Technology at the Allen Institute for Brain Science</b>.
 
     </p>
     <details open>
@@ -113,10 +155,10 @@ background: '/img/uwbcode2020/home-background.jpg'
             <ul>
                 <li>1: Fill out <a class="ext-link" href="https://bit.ly/join-uwbcode20" target="blank">the registration form</a></li>
                 <li>2: Sign up for <a class="ext-link" href="https://www.hackerrank.com/uwbcode2020-qualification" target="blank"> 
-                the contest on HackerRank</a></li>
+                the contest on HackerRank</a>. The<a class="ext-link" href="https://www.hackerrank.com/uwbcode2020-practice" target="blank"> Practice round</a> is ready for you!</li>
             </ul>
             <div>**Register for the Qualification Round by October 9 to be eligible to compete for prizes.</div>
-
+            
         </section>
     </details>
 
@@ -147,7 +189,7 @@ background: '/img/uwbcode2020/home-background.jpg'
                     <li>UWBCode 2020 has 4 rounds: *all times in PDT. See <a class="ext-link"
                             href="#contest_schedule">schedule</a> for details</li>
                     <li>Each round equally contributes to the final score. The maximum points you can earn per round is
-                        1000 points. Practice round contributes ZERO points to the official contest.</li>
+                        1000 points. The <a class="ext-link" href="https://www.hackerrank.com/uwbcode2020-practice" target="blank">Practice round</a> contributes ZERO points to the official contest.</li>
                     <li>Submissions:
                         <ol>
                             <li>You must submit your code on HackerRank within contest time. All late submission does
@@ -178,6 +220,9 @@ background: '/img/uwbcode2020/home-background.jpg'
                         prevent unfair competition.</li>
                 </ol>
             </li>
+            <li><b>. Languages</b>
+                <div>You can use any languages supported by HackerRank to compete. The current configuration supports most of popular languages: <i>C, C++, Java, Python, C#, Kotlin, Swift, Ruby, Scala, JavaScript, Go, PHP, Perl, R, ... </i></div>
+            </li>
             <li><b>. Judging and scoring</b>
                 <div>UWBCode 2020 is hosted on HackerRank. We give special thanks to HackerRank for providing this
                     platform. HackerRank default judge system will be used in this contest.
@@ -189,9 +234,9 @@ background: '/img/uwbcode2020/home-background.jpg'
                         solution.</li>
                 </ol>
             </li>
-            <li><b>. Winner Announcement</b>
-                <div>UWB ACM updates and announces the top three positions after each round. The full ranking can be
-                    found on contest’s website at competitiveprog.uwbacm.com/uwbcode2020
+            <li><b>. Announcements</b>
+                <div>UWB ACM will announce the top three contestants after each round. Link to the full ranking can be
+                    found on contest’s website as the ranking becomes available.
                 </div>
                 <ol>
                     <li>The final standing will be announced 1 hour after the Final Round ends.</li>
@@ -231,12 +276,9 @@ background: '/img/uwbcode2020/home-background.jpg'
                 </ol>
             </li>
             <li><b>. Prizes</b>
-                <div>The final top 10 contestants in the ranking system will receive special gifts from Allen Institute
-                    for Brain Science. We recognize: <br>
-                    &ensp;&star; 1 winner<br>
-                    &ensp;&star; 1 first runner-up<br>
-                    &ensp;&star; 1 second runner-up<br>
-                    &ensp;&star; 7 consolations<br>
+                <div>We recognize the final top 10 contestants:<br>
+                    &ensp;&star; 1 Winner and 2 Runners-up will have a chance to meet Shoaib Mufti, Senior Director of Data and Technology at the Allen Institute for Brain Science via Microsoft Teams and receive special gifts from the Institution.<br>
+                    &ensp;&star; The next 7 contestants [4th-10th] will be honored on our contest page for their excellent achievements.
                 </div>
             </li>
         </ol>
