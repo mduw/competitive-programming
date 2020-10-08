@@ -69,7 +69,7 @@ var interval = setInterval(function() {
   // If the count down is finished, write some text 
   if (distance < 0) {
     clearInterval(interval);
-    document.getElementById("clk").innerHTML = "CONTEST STARTED!";
+    document.getElementById("clk").innerHTML = "THE QUALIFICATION ROUND STARTED ON HACKERRANK!";
   }
 }, 1000);
 </script>
@@ -202,10 +202,9 @@ var interval = setInterval(function() {
                         eligible for prizes. Contestants in Group 2 are NOT eligible for prizes.
                         <ol>
                             <li>Group 1:
-                                <div>Contestants who are qualified for Round 1. To be qualified for Round 1, contestants
-                                    <b>must</b> solve at least ONE challenge in the qualification round. Contestants,
+                                <div>Contestants who solve at least ONE challenge in each round. Contestants,
                                     who are NOT qualified for
-                                    Round 1, still can compete in Group 2.
+                                    Group 1, still can compete in Group 2.
                                 </div>
                             </li>
                             <li>Group 2:
@@ -279,12 +278,12 @@ var interval = setInterval(function() {
             <li><b>. Prizes</b>
                 <div>We recognize the final top 10 contestants:<br>
                     &ensp;&star; 1 Winner and 2 Runners-up will have a chance to meet Shoaib Mufti, Senior Director of Data and Technology at the Allen Institute for Brain Science via Microsoft Teams and receive special gifts from the Institution.<br>
-                    &ensp;&star; The next 7 contestants [4th-10th] will be honored on our contest page for their excellent achievements in addition to special gifts.
+                    &ensp;&star; The next 7 contestants [4th-10th] will be honored on our contest page for their excellent achievements in addition to special gifts from the Institute.
                 </div>
             </li>
         </ol>
     </details>
-    <details class="tnc">
+    <details class="tnc" open>
         <summary id="terms_conditions" style="background-color: rgb(228, 224, 224); font-weight: bold;">FAQs</summary>
         <ol style="padding-left: 0px">
             <li><b>. Can I compete as a non-UW student?</b>
@@ -309,6 +308,16 @@ var interval = setInterval(function() {
                 <div>Tiebreaker used for ranking is the sum of time of first correct submission for all the problems. Time used for tiebreaking is counted from the time you open individual challenges.</div>
 
             </li>
+            <li><b>. Do I get more points for submitting earlier?</b>
+                You may. Your time to solve a challenge is
+                calculated from the time you read an individual challenge until you submit your first correct
+                solution. The shorter time you need the higher score you get. <br>
+                Person A solve problem B in 1 hours (10AM - 11AM) <br>
+                Person B solve problem B in 30 minutes (2PM - 2:30PM). <br>
+                ==> B get more score than A
+
+            </li>
+            
         </ol>
 
     </details>
