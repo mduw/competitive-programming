@@ -101,8 +101,9 @@ Cheers,
 
 **UWBCode Team**
 
-&ast;&ast;*Group 1: completed the registration form + solved at least 1 challenge*<br>
-&ast;&ast;*Group 2: not qualified for Group 1/ registered but did not compete in the Qualification Round/ compete in Qualification Round but did not register.*<br>
+<code>&ast;&ast;</code>*Group 1: completed the registration form + solved at least 1 challenge*<br>
+
+<code>&ast;&ast;</code>*Group 2: not qualified for Group 1/ registered but did not compete in the Qualification Round/ compete in Qualification Round but did not register.*<br>
 
 ##### Schedule
 
