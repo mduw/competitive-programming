@@ -53,7 +53,7 @@ var interval = setInterval(function() {
 }
 </style>
 <div class="container mb-4 col-md-8 clk-bg">
-        <div class="d-inline-block">Qualification Round starts in</div> <br>
+        <div class="d-inline-block">Round 1 starts in</div> <br>
         <b><div class="d-inline-block" id="clk"></div></b>
 </div>
 <div class="d-flex center">
