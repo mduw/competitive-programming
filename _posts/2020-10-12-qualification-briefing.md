@@ -77,11 +77,13 @@ var interval = setInterval(function() {
 Hello contestants,
 
 Thanks to all contestants who participated in the Qualification Round. You can submit your solution after the end of the contest; However, no score will be added to the Leaderboard. We are excited to announce that 68/206 contestants are eligible to compete in Group 1. If you are not in Group 1, you still can compete in Group 2 for upcoming rounds. 
-#### Top 3 of Group 1 :
+
+#### Top 3 of Group 1:
 1. victoreis1 
 2. mshang_
 3. qiujames
 …<br>
+
 #### Top 3 of group 2: 
 1. yipcubed
 2. austin_arlitt
