@@ -97,9 +97,9 @@ Congrats!
 
 Cheers, 
 
----
-
 **UWBCode Team**
+
+---
 
 <code>&ast;&ast;</code>*Group 1: completed the registration form + solved at least 1 challenge*<br>
 
