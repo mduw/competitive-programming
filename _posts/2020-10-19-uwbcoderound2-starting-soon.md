@@ -77,9 +77,10 @@ var interval = setInterval(function() {
 Hello contestants, 
 
 Thanks to all contestants who participated in Round 1. We are almost there. Keep up your great work! ROUND 2 is scheduled for this Friday.<br> 
-This is the second to last contest. The final top 10 contestants will get swags + brain puzzles + a meeting with Shoaib Mufti, Senior Director of Data and Technology at the Allen Institute for Brain Science.
 **Contest time**: 10:00 AM PDT, Friday Oct. 23 - 10:00 AM PDT, Sunday Oct. 25<br>
 **Contest link**: <a class="ext-link" target="blank" href="https://www.hackerrank.com/uwbcode2020-round2">click here</a>
+
+This is the second to last contest. The final top 10 contestants will get swags + brain puzzles + a meeting with Shoaib Mufti, Senior Director of Data and Technology at the Allen Institute for Brain Science.
  
 **Please note that**:
 <ul>
