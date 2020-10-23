@@ -15,7 +15,7 @@ exturl_regisform: http://bit.ly/join-uwbcode20
 <!-- Display the countdown timer in an element -->
 <script>
 // Set the date we're counting down to
-var countDownDate = new Date("Oct 23, 2020 10:00:00 PDT").getTime();
+var countDownDate = new Date("Oct 25, 2020 10:00:00 PDT").getTime();
 
 // Update the count down every 1 second
 var interval = setInterval(function() {
@@ -39,7 +39,7 @@ var interval = setInterval(function() {
   // If the count down is finished, write some text 
   if (distance < 0) {
     clearInterval(interval);
-    document.getElementById("clk").innerHTML = "ROUND 2 STARTED ON HACKERRANK!";
+    document.getElementById("clk").innerHTML = "ROUND 2 ENDED!";
   }
 }, 1000);
 </script>
@@ -53,7 +53,7 @@ var interval = setInterval(function() {
 }
 </style>
 <div class="container mb-4 col-md-8 clk-bg">
-        <div class="d-inline-block">Round 2 starts in</div> <br>
+        <div class="d-inline-block">Round 2 ends in</div> <br>
         <b><div class="d-inline-block" id="clk"></div></b>
 </div>
 <div class="d-flex center">
